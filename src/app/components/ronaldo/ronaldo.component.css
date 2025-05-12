@@ -1,0 +1,79 @@
+.jugador-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.jugador-row {
+    max-width: 350px;
+    width: 100%;
+}
+
+.jugador-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.jugador-card:hover {
+    transform: translateY(-5px);
+}
+
+.jugador-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.jugador-body {
+    padding: 1.2rem;
+}
+
+.jugador-nombre {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #343a40;
+    font-size: 1.5rem;
+}
+
+.jugador-bio {
+    font-size: 0.95rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+.jugador-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.jugador-lista li {
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #212529;
+}
+
+.jugador-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.jugador-btn:hover {
+    background-color: #0056b3;
+}

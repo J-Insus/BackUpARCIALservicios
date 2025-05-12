@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JamesService,James } from 'src/app/services/james.service';
 
 @Component({
   selector: 'app-james',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JamesComponent implements OnInit {
 
-  constructor() { }
+  james : James[]=[];
+
+  constructor(private _jamesService : JamesService) { }
 
   ngOnInit(): void {
+    this.james=this._jamesService.getJugador();
+console.log(this.james);
+
+
   }
 
 }

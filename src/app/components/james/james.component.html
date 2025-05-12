@@ -1,1 +1,19 @@
-<p>james works!</p>
+<div class="jugador-container">
+    <div class="jugador-row" *ngFor="let jugador of james">
+        <div class="jugador-card">
+            <img [src]="jugador.img" class="jugador-img" [alt]="jugador.nombre" />
+            <div class="jugador-body">
+                <h2 class="jugador-nombre">{{ jugador.nombre }}</h2>
+                <p class="jugador-bio">{{ jugador.bio }}</p>
+                <ul class="jugador-lista">
+                    <li><strong>Nacimiento:</strong> {{ jugador.nacimiento }}</li>
+                    <li><strong>Selección:</strong> {{ jugador.seleccion }}</li>
+                    <li><strong>Equipo:</strong> {{ jugador.equipo }}</li>
+                </ul>
+                <a [routerLink]="['/home']" class="jugador-btn">
+          Volver al inicio
+        </a>
+            </div>
+        </div>
+    </div>
+</div>

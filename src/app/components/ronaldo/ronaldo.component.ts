@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RonaldoService,Ronaldo } from 'src/app/services/ronaldo.service';
 
 @Component({
   selector: 'app-ronaldo',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RonaldoComponent implements OnInit {
 
-  constructor() { }
+    ronaldo : Ronaldo[]=[];
+  
+
+  constructor(private _ronaldoService : RonaldoService) { }
 
   ngOnInit(): void {
+
+    this.ronaldo=this._ronaldoService.getJugador();
+console.log(this.ronaldo);
+
   }
 
 }
