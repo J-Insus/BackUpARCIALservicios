@@ -1,0 +1,26 @@
+/* Global reset para evitar espacios en blanco */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+
+/* Footer */
+
+.footer {
+    background-color: #94af8f;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+    width: 100vw;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,21 @@
+/* Global reset para evitar espacios en blanco */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #94af8f;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #333;
+    width: 100vw;
+    box-sizing: border-box;
+}
