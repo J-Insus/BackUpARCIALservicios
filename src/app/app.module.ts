@@ -11,6 +11,8 @@ import { APP_ROUTING } from './app.routes';
 import { JamesService } from './services/james.service';
 import { MessiService } from './services/messi.service';
 import { RonaldoService } from './services/ronaldo.service';
+import { JugadoresService } from './services/jugadores.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +46,8 @@ import { JugadoresComponent } from './components/jugadores/jugadores.component';
 
       JamesService,
       MessiService,
-      RonaldoService
+      RonaldoService,
+      JugadoresService
   ],
   bootstrap: [AppComponent]
 })

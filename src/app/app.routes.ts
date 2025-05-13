@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { JamesComponent } from "./components/james/james.component";
 import { MessiComponent } from "./components/messi/messi.component";
 import { RonaldoComponent } from "./components/ronaldo/ronaldo.component";
+import { JugadoresComponent } from "./components/jugadores/jugadores.component";
 
 
 const APP_ROUTES:Routes=[
@@ -13,6 +14,7 @@ const APP_ROUTES:Routes=[
 {path: 'james', component: JamesComponent},
 {path: 'messi', component: MessiComponent},
 {path: 'ronaldo', component: RonaldoComponent},
+{path : 'jugadores', component: JugadoresComponent},
 {path: '**', pathMatch: 'full',redirectTo:'home'}, //nn = home
 ];
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES);  
